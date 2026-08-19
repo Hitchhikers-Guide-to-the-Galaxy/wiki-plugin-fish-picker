@@ -1,0 +1,67 @@
+{
+  "title": "About Fish Picker Plugin",
+  "plugin": "fish-picker",
+  "story": [
+    {
+      "type": "markdown",
+      "id": "9795db2e8f0e1e18",
+      "text": "The **Fish Picker Plugin** is the site identity flag editor. A site owner opens it from the hitchhiker Tools page and chooses a parametric Mice & Fish flag \u2014 colour and school by topic, species by person, markings by individual \u2014 which is written to `status/favicon.png` with the choice recorded in a PNG `tEXt` chunk so it can be read back and re-edited."
+    },
+    {
+      "type": "markdown",
+      "id": "f4374df69fb7877f",
+      "text": "It exposes `window.plugins.fishPicker` and nothing else. The hitchhiker Tools page offers the Fish button only when that object exists, so a farm without this plugin simply has no Fish button \u2014 loose coupling in both directions. Owner only; the write goes through the wiki's own favicon route."
+    },
+    {
+      "type": "markdown",
+      "id": "307aa8c5848909a3",
+      "text": "Extracted from [[About Hitchhiker Plugin]]'s `wiki-ux.js` in August 2026. Built with esbuild; the served file is about 7 KB."
+    },
+    {
+      "type": "markdown",
+      "id": "f005d1880df5ccfb",
+      "text": "# Repositories\n\n- [https://github.com/Hitchhikers-Guide-to-the-Galaxy/wiki-plugin-fish-picker wiki-plugin-fish-picker on GitHub]\n- [https://www.npmjs.com/package/wiki-plugin-fish-picker wiki-plugin-fish-picker on npm]"
+    },
+    {
+      "type": "markdown",
+      "id": "6949acde4acc38a8",
+      "text": "# See\n\n- [[About Hitchhiker Plugin]]\n- [[About Chooser Plugin]]"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "About Fish Picker Plugin",
+        "story": [
+          {
+            "type": "markdown",
+            "id": "9795db2e8f0e1e18",
+            "text": "The **Fish Picker Plugin** is the site identity flag editor. A site owner opens it from the hitchhiker Tools page and chooses a parametric Mice & Fish flag \u2014 colour and school by topic, species by person, markings by individual \u2014 which is written to `status/favicon.png` with the choice recorded in a PNG `tEXt` chunk so it can be read back and re-edited."
+          },
+          {
+            "type": "markdown",
+            "id": "f4374df69fb7877f",
+            "text": "It exposes `window.plugins.fishPicker` and nothing else. The hitchhiker Tools page offers the Fish button only when that object exists, so a farm without this plugin simply has no Fish button \u2014 loose coupling in both directions. Owner only; the write goes through the wiki's own favicon route."
+          },
+          {
+            "type": "markdown",
+            "id": "307aa8c5848909a3",
+            "text": "Extracted from [[About Hitchhiker Plugin]]'s `wiki-ux.js` in August 2026. Built with esbuild; the served file is about 7 KB."
+          },
+          {
+            "type": "markdown",
+            "id": "f005d1880df5ccfb",
+            "text": "# Repositories\n\n- [https://github.com/Hitchhikers-Guide-to-the-Galaxy/wiki-plugin-fish-picker wiki-plugin-fish-picker on GitHub]\n- [https://www.npmjs.com/package/wiki-plugin-fish-picker wiki-plugin-fish-picker on npm]"
+          },
+          {
+            "type": "markdown",
+            "id": "6949acde4acc38a8",
+            "text": "# See\n\n- [[About Hitchhiker Plugin]]\n- [[About Chooser Plugin]]"
+          }
+        ]
+      },
+      "date": 1787120000000
+    }
+  ]
+}
