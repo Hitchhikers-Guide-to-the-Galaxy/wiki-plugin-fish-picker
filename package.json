@@ -1,6 +1,6 @@
 {
   "name": "wiki-plugin-fish-picker",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The site identity flag editor: a parametric Mice & Fish favicon picker that writes status/favicon.png (owner only). Loaded farm-wide by the hitchhiker security bootstrap.",
   "main": "client/wiki-fish-picker.js",
   "type": "module",
@@ -22,6 +22,24 @@
     "url": "https://github.com/Hitchhikers-Guide-to-the-Galaxy/wiki-plugin-fish-picker/issues"
   },
   "homepage": "https://github.com/Hitchhikers-Guide-to-the-Galaxy/wiki-plugin-fish-picker#readme",
+  "fedwiki": {
+    "requires": {
+      "security": {
+        "module": "wiki-security-hitchhiker-passport",
+        "range": ">=0.14.0-hitchhiker.2",
+        "tag": "hitchhiker",
+        "config": {
+          "security_type": "hitchhiker-passport"
+        },
+        "why": "the only farm-wide client injection point; without it this client is served and referenced by nothing"
+      }
+    },
+    "provides": {
+      "seats": [
+        "fish-picker"
+      ]
+    }
+  },
   "author": "David Bovill",
   "license": "MIT",
   "devDependencies": {
